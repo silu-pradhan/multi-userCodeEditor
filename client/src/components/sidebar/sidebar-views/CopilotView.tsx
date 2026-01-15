@@ -113,7 +113,7 @@ function CopilotView() {
                 <ReactMarkdown
                     components={{
                         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                        code({ inline, className, children, ...props }: any) {
+                        code({ inline, className, children,  }: any) {
                             const match = /language-(\w+)/.exec(className || "")
                             const language = match ? match[1] : "javascript" // Default to JS
 

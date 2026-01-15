@@ -44,7 +44,7 @@
 1. **Fork this repository:** Click the Fork button located in the top-right corner of this page.
 2. **Clone the repository:**
    ```bash
-   git clone https://github.com/<your-username>/Code-Sync.git
+    git clone https://github.com/silu-pradhan/multi-userCodeEditor.git
    ```
 3. **Create .env file:**
    Inside the client and server directories create `.env` and set:
@@ -95,20 +95,21 @@
 
    ```bash
    # Pull Backend Image
-   docker pull sahilatahar/code-sync-server:latest
+   docker pull s123ilu/backend-app:1.0
+
 
    # Pull Frontend Image
-   docker pull sahilatahar/code-sync-client:latest
+  docker pull s123ilu/frontend-app:1.0
    ```
 
 3. **Run Docker Containers:**
 
    ```bash
    # Run Backend Container (Port 3000)
-   docker run -d -p 3000:3000 --name code-sync-server sahilatahar/code-sync-server:latest
+  docker run -p 3000:3000 s123ilu/backend-app:1.0
 
    # Run Frontend Container (Port 5173)
-   docker run -d -p 5173:5173 --name code-sync-client sahilatahar/code-sync-client:latest
+   docker run -d -p 5173:5173 s123ilu/frontend-app:1.0
    ```
 
 4. **Access the application:**
